@@ -14,7 +14,7 @@ namespace Moserware.AesIllustrated
             get
             {
                 return
-                    (new FileInfo(Path.Combine(Path.GetDirectoryName(typeof (ProjectPaths).Assembly.Location), @"..\..")))
+                    (new FileInfo(Path.Combine(Path.GetDirectoryName(typeof (ProjectPaths).Assembly.Location), @".."+ Path.PathSeparator +"..")))
                         .FullName;
             }
         }
